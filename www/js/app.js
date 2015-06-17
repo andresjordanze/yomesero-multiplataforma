@@ -22,6 +22,10 @@ app = angular.module('starter', ['ionic'])
   });
 })
 
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.backButton.previousTitleText(false).text('');
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
