@@ -1,0 +1,20 @@
+<ion-view view-title="Menú Completo">
+  <ion-content class="padding">
+    <h3 align="center">Menú</h3>
+    <button class="button button-block" ng-click="create_item()">Agregar Item</button>
+    <div class="list" >
+      <div ng-repeat="item in items"> 
+        <a class="item item-thumbnail-left" href="#">
+          <img src="img/food.png" ng-if="item.item_price <= 30 && item.item_type === 'Comida' ">
+          <img src="img/food2.png" ng-if="item.item_price > 30 && item.item_type === 'Comida' ">
+          <img src="img/drink2.png" ng-if="item.item_price <= 20 && item.item_type === 'Bebida'" >
+          <img src="img/drink.png" ng-if="item.item_price > 20 && item.item_type === 'Bebida'">
+          <img src="img/dessert.png" ng-if="item.item_price <= 10 && item.item_type === 'Postre'">
+          <img src="img/dessert2.png" ng-if="item.item_price > 10 && item.item_type === 'Postre'">
+          <h2>Nombre: {{item.item_name}}</h2>
+          <p>Precio: Bs. {{item.item_price}}</p>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

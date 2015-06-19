@@ -1,0 +1,15 @@
+<ion-view view-title="Restaurantes">
+  <ion-content >
+   <div class="list" >
+	    <div ng-repeat="restaurant in restaurants">	
+	    	<a class="item item-thumbnail-left" href="#">
+       			<img src="img/restaurant.png">
+		    	  <h2>{{restaurant.restaurant_name}}</h2>
+		      	<p>Tipo: {{restaurant.restaurant_type}}</p>
+            <p>Direccion: {{restaurant.restaurant_address}}</p>
+            <p>Telefono: {{restaurant.restaurant_phone}}</p>
+  	    	</a>
+  	    </div>
+  	</div>
+  </ion-content>
+</ion-view>

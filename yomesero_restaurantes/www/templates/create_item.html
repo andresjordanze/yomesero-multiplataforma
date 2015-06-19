@@ -1,0 +1,40 @@
+<ion-view view-title="Nuevo Item">
+	<ion-content class="padding">
+		<form id="myForm">
+			<div class="list">
+			  <h4 id="notice" name="notice"></h4>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Nombre</span>
+			    <input type="text" placeholder="Nombre del item" ng-model="data.item_name">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Descripcion</span>
+			    <input type="text" placeholder="Descripcion del item" ng-model="data.item_description">
+			  </label>
+			  <!--label class="item item-input item-stacked-label">
+			    <span class="input-label">Tipo</span>
+			    <input type="text" placeholder="Tipo de item" ng-model="data.item_type">
+			  </label-->
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      Tipo
+			    </div>
+			    <select ng-model="data.item_type">
+			      <option>Comida</option>
+			      <option>Bebida</option>
+			      <option>Postre</option>
+			    </select>
+			  </label>	
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Tiempo</span>
+			    <input type="number" placeholder="Tiempo de preparacion del item" ng-model="data.item_time">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Precio</span>
+			    <input type="number" placeholder="Precio del item" ng-model="data.item_price">
+			  </label>
+			  <input type="submit" value="Crear" class="button button-block" ng-click="create_item()">
+			</div>
+		</form>
+	</ion-content>
+</ion-view>
