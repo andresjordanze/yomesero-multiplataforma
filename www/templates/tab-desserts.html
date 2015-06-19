@@ -1,0 +1,14 @@
+<ion-view view-title="Postres">
+  <ion-content >
+   <div class="list" >
+	    <div ng-repeat="item in items" ng-if="item.item_type === 'Postre'">	
+	    	<a class="item item-thumbnail-left" href="#">
+       		<img src="img/dessert.png" ng-if="item.item_price <= 10">
+          <img src="img/dessert2.png" ng-if="item.item_price > 10">
+		    	<h2>Nombre: {{item.item_name}}</h2>
+		      	<p>Precio: Bs. {{item.item_price}}</p>
+  	    	</a>
+  	    </div>
+  	</div>
+  </ion-content>
+</ion-view>
