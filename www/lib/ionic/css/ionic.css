@@ -5068,7 +5068,7 @@ a.item-content {
   padding: 0;
   text-align: center; }
   .item-image img:first-child, .item-image .list-img {
-    width: 70%;
+    width: 55%;
     vertical-align: middle; }
 
 .item-body {

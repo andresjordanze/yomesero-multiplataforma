@@ -5,8 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-//angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-app = angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -97,62 +96,4 @@ app = angular.module('starter', ['ionic'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');
 
-});
-
-app.controller('HomeCtrl', function($scope) {})
-
-app.controller('FoodsCtrl', function($scope, $state, items) {
-  $scope.items = [];
-  items.getItems().success(function(data){
-    $scope.items = data;
-  });
-});
-
-app.controller('DrinksCtrl', function($scope, $state, items) {
-  $scope.items = [];
-  items.getItems().success(function(data){
-    $scope.items = data;
-  });
-});
-
-app.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-
-app.controller('DessertsCtrl', function($scope, $state, items) {
-  $scope.items = [];
-  items.getItems().success(function(data){
-    $scope.items = data;
-  });
-});
-
-app.controller('RestaurantsCtrl', function($scope, $state, restaurants) {
-  $scope.restaurants = [];
-  restaurants.getRestaurants().success(function(data){
-    $scope.restaurants = data;
-  });
-});
-
-
-app.provider('items', function itemsProvider() {
-
-  this.$get = function itemsFactory($http) {
-    var factory = {};
-    factory.getItems = function(){
-    return $http.jsonp('http://json2jsonp.com/?url=http://frozen-springs-8168.herokuapp.com/items.json&callback=JSON_CALLBACK');
-  };
-  return factory;
-  };
-});
-
-app.provider('restaurants', function restaurantsProvider() {
-
-  this.$get = function restaurantsFactory($http) {
-    var factory = {};
-    factory.getRestaurants = function(){
-    return $http.jsonp('http://json2jsonp.com/?url=http://frozen-springs-8168.herokuapp.com/restaurants.json&callback=JSON_CALLBACK');
-  };
-  return factory;
-  };
 });
