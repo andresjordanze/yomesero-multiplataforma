@@ -2,12 +2,28 @@
 
 NOTAS:
 
-- Esta aplicación esta desarrollada en Ionic 1.5.4.
+- Estas aplicaciónes estan desarrolladas en Ionic 1.5.4.
 - El link de la API desarrollada por nosotros es https://frozen-springs-8168.herokuapp.com
-- El link del video en youtube es https://www.youtube.com/watch?v=
+- El link de los videos en youtube son:
+  YoMesero Clientes
+  https://www.youtube.com/watch?v=ckG8aG64rcU
+  YoMesero Restaurantes
+  https://www.youtube.com/watch?v=HOcNUk42SnQ
 
-#ADVERTENCIA:
-- No ingresar campos vacios en el crear item, ya que esto ocasionara problemas en el funcionamiento de la aplicacion.
+<h2>Plugins:</h2>
+- Whitelist
+
+<h2>Herramientas externas:</h2>
+- jsonp.afeld.me
+- json2jsonp.com *Comentado en codigo debido a que se actualiza cada 1 hora
+
+<h2>Recomendaciones para ejecutar:</h2>
+- Una vez descargados los proyectos solamente es necesario ejecutar el siguiente comando en cada proyecto:
+  cordova plugin add cordova-plugin-whitelist
+- No es necesario hacer el bower install, ya que este reemplazara los archivos de css por defecto los cuales modificamos para nuestro proyecto.
+
+<h2>ADVERTENCIA</h2>
+- Debido al uso de la herramienta jsonp.afeld.me las aplicaciones suelen no mostrar datos, lo necesario para su correcto funcionamiento seria refrescar la pagina.
 
 Autores: 
 - Paolo Adrian Fernandez Roman
@@ -16,6 +32,6 @@ Autores:
 
 Diplomado de aplicaciones móviles - Modulo Multiplataforma
 
-Docente: Ing. Alvaro Molina
+Docente: Ing. Alvaro Molina Crespo
 
 Universidad Católica Boliviana "San Pablo" Regional Cochabamba
