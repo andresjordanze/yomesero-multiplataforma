@@ -5,10 +5,10 @@ NOTAS:
 - Estas aplicaciónes estan desarrolladas en Ionic 1.5.4.
 - El link de la API desarrollada por nosotros es https://frozen-springs-8168.herokuapp.com
 - El link de los videos en youtube son:
-  YoMesero Clientes
-  https://www.youtube.com/watch?v=ckG8aG64rcU
-  YoMesero Restaurantes
-  https://www.youtube.com/watch?v=HOcNUk42SnQ
+  <br>YoMesero Clientes
+  <br>https://www.youtube.com/watch?v=ckG8aG64rcU
+  <br>YoMesero Restaurantes
+  <br>https://www.youtube.com/watch?v=HOcNUk42SnQ
 
 <h2>Plugins:</h2>
 - Whitelist
